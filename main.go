@@ -36,8 +36,10 @@ func main() {
 			fmt.Println("Error:", err)
 		}
 	})
-
-	err := http.ListenAndServe(":7999", nil)
+	port := 7999
+	addr := fmt.Sprintf(":%d", port)
+	fmt.Printf("server running on port %d", port)
+	err := http.ListenAndServe(addr, nil)
 	if err != nil {
 		fmt.Println("Server error:", err)
 		panic("Stopping Server")
