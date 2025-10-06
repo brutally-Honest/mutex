@@ -32,23 +32,6 @@ It exposes an endpoint `/sweet` that increments two counters:
 
 ---
 
-## Running the Server
-
-1. Clone the repository:
-
-git clone https://github.com/your-username/simple-server.git  
-cd simple-server
-
-2. Run the server:
-
-go run main.go
-
-3. By default, the server runs on port 7999:
-
-http://localhost:7999/sweet
-
----
-
 ## Testing Concurrency
 
 The server was stress-tested using [`hey`](https://github.com/rakyll/hey) to simulate multiple concurrent requests.
